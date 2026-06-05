@@ -15,7 +15,7 @@ body {
     background-color: var(--baby-pink);
     font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
     color: var(--dark-text);
-    font-size: 0.95rem; /* Shkronja jo shumë të mëdha, mjaftueshëm elegante */
+    font-size: 0.95rem; 
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
 .navbar-fenty .navbar-brand {
     color: var(--dark-text) !important;
     font-weight: 700;
-    font-size: 1.4rem; /* Madhësi mesatare, shumë fine */
+    font-size: 1.4rem; 
     letter-spacing: 1.5px;
 }
 
@@ -49,14 +49,13 @@ h1, h2, h3, h4, h5, .navbar-brand {
     color: var(--dark-text) !important;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 0.85rem; /* Madhësi e vogël dhe estetike për menunë */
+    font-size: 0.85rem; 
     letter-spacing: 1.2px;
     padding: 8px 15px !important;
     position: relative;
     transition: var(--smooth-transition);
 }
 
-/* Efekti kur kalon miun te linkat e menusë - vjen një linjë rozë në mënyrë smooth */
 .navbar-fenty .nav-link:hover {
     color: var(--deep-pink) !important;
 }
@@ -77,22 +76,21 @@ h1, h2, h3, h4, h5, .navbar-brand {
 }
 
 /* ==========================================================================
-   2. HERO BANNER (I LËMUAR ME Sfond ELEGANT)
+   2. HERO BANNER (I LËMUAR ME SFOND ELEGANT)
    ========================================================================== */
-.hero-section {
-    background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 240, 242, 0.85)), 
-                url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1920') no-repeat center center/cover;
-    height: 480px;
-    color: var(--dark-text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero-section { 
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255, 240, 242, 0.9)), 
+                url('../images/Fenty-Beauty1.jpg') no-repeat center center/cover; 
+    height: 500px; 
+    color: var(--dark-text); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     text-align: center;
-    animation: fadeInEffect 1.2s ease-out; /* Animacion zbehjeje në fillim */
+    animation: fadeInEffect 1.5s ease-in-out;
 }
-
 .hero-section h1 {
-    font-size: 2.8rem; /* Jo ekstremisht e madhe, stil modern */
+    font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -110,7 +108,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
     background-color: var(--soft-pink);
     color: var(--dark-text);
     border: 1px solid var(--soft-pink);
-    border-radius: 25px; /* Kënde të rrumbullakosura e të buta */
+    border-radius: 25px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.85rem;
@@ -124,34 +122,72 @@ h1, h2, h3, h4, h5, .navbar-brand {
     background-color: var(--white);
     color: var(--dark-text);
     border: 1px solid var(--deep-pink);
-    transform: translateY(-3px); /* Ngrihet pak lart në mënyrë smooth */
+    transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(243, 163, 183, 0.4);
 }
 
 /* ==========================================================================
-   4. KARTELAT E PRODUKTEVE EDHE KATEGORITË (MODERNE ME HIJE TË LEHTA)
+   4. KARTELAT E PRODUKTEVE (VETËM 5 PRODUKTE NË RRESHT PËR KOLEKSIONIN)
    ========================================================================== */
-.card-product {
-    border: none;
-    border-radius: 16px; /* Kënde të lëmuara për kartelat */
+
+/* 🛠️ RREGULLIMI KRYESOR: Ky kod tani aplikohet VETËM te rreshti i produkteve, duke mos e prekur faqen Home */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products-grid > .col-md-3,
+.products-grid > [class*="col-"] {
+    flex: 0 0 20% !important;
+    max-width: 20% !important;
+}
+
+/* Përgjegjshmëria për pajisjet më të vogla (Tablet dhe Telefon) */
+@media (max-width: 1200px) {
+    .products-grid > [class*="col-"] {
+        flex: 0 0 25% !important;
+        max-width: 25% !important; /* 4 produkte në rresht */
+    }
+}
+@media (max-width: 992px) {
+    .products-grid > [class*="col-"] {
+        flex: 0 0 33.33% !important;
+        max-width: 33.33% !important; /* 3 produkte në rresht */
+    }
+}
+@media (max-width: 768px) {
+    .products-grid > [class*="col-"] {
+        flex: 0 0 50% !important;
+        max-width: 50% !important; /* 2 produkte në rresht */
+    }
+}
+@media (max-width: 480px) {
+    .products-grid > [class*="col-"] {
+        flex: 0 0 100% !important;
+        max-width: 100% !important; /* 1 produkt në rresht */
+    }
+}
+
+/* Stilimi i kartelës së produktit */
+.card-product, .card.h-100 {
+    border: none !important;
+    border-radius: 16px !important;
     background-color: var(--white);
     box-shadow: 0 8px 20px rgba(255, 209, 220, 0.3);
     overflow: hidden;
     transition: var(--smooth-transition);
 }
 
-/* Animacioni kur kalon miun mbi produkt */
-.card-product:hover {
+.card-product:hover, .card.h-100:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 28px rgba(243, 163, 183, 0.4);
 }
 
-/* Zoom i lehtë dhe i lëmuar i fotos së produktit */
-.card-product img {
+.card-product img, .card-img-top {
     transition: transform 0.5s ease;
 }
 
-.card-product:hover img {
+.card-product:hover img, .card.h-100:hover .card-img-top {
     transform: scale(1.05);
 }
 
@@ -176,10 +212,9 @@ h1, h2, h3, h4, h5, .navbar-brand {
     box-shadow: 0 12px 30px rgba(255, 209, 220, 0.4);
     border: 1px solid rgba(255, 209, 220, 0.3);
     padding: 35px !important;
-    animation: slideUpEffect 0.7s ease-out; /* Vjen nga poshtë butësisht */
+    animation: slideUpEffect 0.7s ease-out;
 }
 
-/* Kutitë e shkrimit (Inputs) */
 .form-control {
     border-radius: 10px;
     border: 1px solid var(--soft-pink);
@@ -189,7 +224,6 @@ h1, h2, h3, h4, h5, .navbar-brand {
     transition: var(--smooth-transition);
 }
 
-/* Efekti kur klikon brenda kutisë së shkrimit */
 .form-control:focus {
     border-color: var(--deep-pink);
     box-shadow: 0 0 0 0.25rem rgba(243, 163, 183, 0.15);
@@ -234,4 +268,3 @@ footer a:hover {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
