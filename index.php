@@ -1,6 +1,6 @@
 <?php include_once "includes/header.php"; ?>
 
-<div class="hero-section" style="background: linear-gradient(rgba(255,255,255,0.1), rgba(255, 240, 242, 0.8)), url('images/Fenty-Beauty1.jpg') no-repeat center center/cover; height: 500px; display: flex; align-items: center;">
+<div class="hero-section" style="background: linear-gradient(rgba(255,255,255,0.1), rgba(255, 240, 242, 0.8)), url('images/Fenty.jpg') no-repeat center center/cover; height: 500px; display: flex; align-items: center;">
     <div class="container text-center w-100">
         <h1 class="display-3 fw-bold text-uppercase">The New Era of Beauty</h1>
         <a href="products.php" class="btn btn-dark btn-lg mt-3 rounded-0 text-uppercase fw-bold">Shop Now</a>
