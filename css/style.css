@@ -1,53 +1,29 @@
-/* 
-   PALETA E RE E NGJYRAVE (BABY PINK & WHITE) EDHE KONFIGURIMET LOCK
-    */
+
 :root {
-<<<<<<< HEAD
-    --baby-pink: #FFF0F2;      /* Sfondi kryesor i uebsajtit (Rozë shumë e lehtë) */
-    --soft-pink: #FFD1DC;      /* Nuancë rozë e butë për butona dhe linja */
-    --deep-pink: #F3A3B7;      /* Rozë më e theksuar kur kalon miu (hover) */
-    --dark-text: #3A3A3A;      /* Ngjyra e shkronjave (gri shumë e mbyllur) */
-    --white: #ffffff;          /* E bardhë e pastër për kartela dhe dritare */
-    --smooth-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Animacion */
-=======
     --baby-pink: #FFF0F2;      
-    --soft-pink: #FFD1DC;     
+    --soft-pink: #FFD1DC;      
     --deep-pink: #F3A3B7;     
     --dark-text: #3A3A3A;     
-    --white: #ffffff;         
+    --white: #ffffff;          
     --smooth-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
->>>>>>> 88b0b7dd611ecaef5fd9f22a06f9d2e0086a02a0
 }
 
-/* Stilimi bazë i faqes */
+
 body {
     background-color: var(--baby-pink);
     font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
     color: var(--dark-text);
-<<<<<<< HEAD
     font-size: 0.95rem;
-=======
-    font-size: 0.95rem; 
->>>>>>> 88b0b7dd611ecaef5fd9f22a06f9d2e0086a02a0
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-/* Rregullimi i titujve të faqeve */
 h1, h2, h3, h4, h5, .navbar-brand {
-<<<<<<< HEAD
     font-family: 'Playfair Display', 'Georgia', serif;
     color: #2D2D2D;
-=======
-    font-family: 'Playfair Display', 'Georgia', serif; /* Shkrim luksoz dhe estetik */
-    color: #363535;
->>>>>>> 88b0b7dd611ecaef5fd9f22a06f9d2e0086a02a0
     letter-spacing: 0.5px;
 }
 
-/* ==========================================================================
-   1. NAVBAR ELEGANTE (E BARDHË ME DETAJE ROZË)
-   ========================================================================== */
 .navbar-fenty {
     background-color: var(--white) !important;
     border-bottom: 1px solid rgba(255, 209, 220, 0.6);
@@ -59,11 +35,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
 .navbar-fenty .navbar-brand {
     color: var(--dark-text) !important;
     font-weight: 700;
-<<<<<<< HEAD
     font-size: 1.4rem;
-=======
-    font-size: 1.4rem; 
->>>>>>> 88b0b7dd611ecaef5fd9f22a06f9d2e0086a02a0
     letter-spacing: 1.5px;
 }
 
@@ -71,11 +43,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
     color: var(--dark-text) !important;
     text-transform: uppercase;
     font-weight: 600;
-<<<<<<< HEAD
     font-size: 0.85rem;
-=======
-    font-size: 0.85rem; 
->>>>>>> 88b0b7dd611ecaef5fd9f22a06f9d2e0086a02a0
     letter-spacing: 1.2px;
     padding: 8px 15px !important;
     position: relative;
@@ -101,10 +69,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
     width: calc(100% - 30px);
 }
 
-/* ==========================================================================
-   2. HERO BANNER (I LËMUAR ME SFOND ELEGANT)
-   ========================================================================== */
-<<<<<<< HEAD
+
 .hero-section {
     background: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 240, 242, 0.85)), 
                 url('../images/fenty1.avif') no-repeat center center/cover;
@@ -115,18 +80,6 @@ h1, h2, h3, h4, h5, .navbar-brand {
     justify-content: center;
     text-align: center;
     animation: fadeInEffect 1.2s ease-out;
-=======
-.hero-section { 
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(255, 240, 242, 0.9)), 
-                url('../images/Fenty.jpg') no-repeat center center/cover; 
-    height: 500px; 
-    color: var(--dark-text); 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-    animation: fadeInEffect 1.5s ease-in-out;
->>>>>>> 88b0b7dd611ecaef5fd9f22a06f9d2e0086a02a0
 }
 .hero-section h1 {
     font-size: 2.8rem;
@@ -140,9 +93,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
     margin-bottom: 25px;
 }
 
-/* ==========================================================================
-   3. BUTONAT E RINJ (SOFT PINK ME RRUMBULLAKIM & TRANSITION)
-   ========================================================================== */
+
 .btn-fenty {
     background-color: var(--soft-pink);
     color: var(--dark-text);
@@ -165,16 +116,13 @@ h1, h2, h3, h4, h5, .navbar-brand {
     box-shadow: 0 8px 20px rgba(243, 163, 183, 0.4);
 }
 
-/* ==========================================================================
-   4. KARTELAT E PRODUKTEVE (VETËM 5 PRODUKTE NË RRESHT PËR KOLEKSIONIN)
-   ========================================================================== */
-<<<<<<< HEAD
+
 .card-product {
     border: none;
     border-radius: 16px;
-=======
+}
 
-/* 🛠️ RREGULLIMI KRYESOR: Ky kod tani aplikohet VETËM te rreshti i produkteve, duke mos e prekur faqen Home */
+
 .products-grid {
     display: flex;
     flex-wrap: wrap;
@@ -183,36 +131,35 @@ h1, h2, h3, h4, h5, .navbar-brand {
 .products-grid > .col-md-3,
 .products-grid > [class*="col-"] {
     flex: 0 0 20%;
-    max-width: 20%; /* U hoq shkronja 't' e gabuar që ishte këtu */
+    max-width: 20%;
 }
 
-/* Përgjegjshmëria për pajisjet më të vogla (Tablet dhe Telefon) */
+
 @media (max-width: 1200px) {
     .products-grid > [class*="col-"] {
         flex: 0 0 25% !important;
-        max-width: 25% !important; /* 4 produkte në rresht */
+        max-width: 25% !important;
     }
 }
 @media (max-width: 992px) {
     .products-grid > [class*="col-"] {
         flex: 0 0 33.33% !important;
-        max-width: 33.33% !important; /* 3 produkte në rresht */
+        max-width: 33.33% !important; 
     }
 }
 @media (max-width: 768px) {
     .products-grid > [class*="col-"] {
         flex: 0 0 50% !important;
-        max-width: 50% !important; /* 2 produkte në rresht */
+        max-width: 50% !important; 
     }
 }
 @media (max-width: 480px) {
     .products-grid > [class*="col-"] {
         flex: 0 0 100% !important;
-        max-width: 100% !important; /* 1 produkt në rresht */
+        max-width: 100% !important; 
     }
 }
 
-/* Stilimi i kartelës së produktit */
 .card-product, .card.h-100 {
     border: none !important;
     border-radius: 16px !important;
@@ -235,36 +182,35 @@ h1, h2, h3, h4, h5, .navbar-brand {
     transform: scale(1.05);
 }
 
-/* --- STILIMI I SHTUAR PËR KATEGORITË (Index Page) --- */
 .card-category {
     position: relative;
     overflow: hidden;
-    background-color: #000; /* Krijon sfond të zi për overlay-in */
+    background-color: #000; 
 }
 
 .category-img {
-    height: 450px !important; /* Detyron lartësinë e njëjtë për të dyja fotot */
-    width: 100%;             /* Mbush tërë gjerësinë e kolonës */
-    object-fit: cover;       /* Pret pjesët e tepërta pa e shtrembëruar foton */
-    object-position: center; /* Centron fokusin e fotos */
-    opacity: 0.65;           /* E zbehim foton që shkrimi mbi të të shihet mirë */
+    height: 450px !important; 
+    width: 100%;             
+    object-fit: cover;     
+    object-position: center;
+    opacity: 0.65;          
     transition: transform 0.6s ease;
 }
 
 .card-category:hover .category-img {
-    transform: scale(1.06); /* Efekti zoom kur kalon miu */
+    transform: scale(1.06);
 }
 
 .card-category .card-img-overlay {
-    background: rgba(0, 0, 0, 0.15); /* Një hije e lehtë mbi tërë kartelën */
+    background: rgba(0, 0, 0, 0.15); 
     transition: var(--smooth-transition);
 }
 
 .card-category:hover .card-img-overlay {
-    background: rgba(0, 0, 0, 0.3); /* Errësohet pak më shumë në hover */
+    background: rgba(0, 0, 0, 0.3); 
 }
 
-/* Badge (Kategoria mbi produkt) */
+
 .badge-category {
     background-color: var(--baby-pink);
     color: var(--deep-pink);
@@ -276,9 +222,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
     border: 1px solid rgba(243, 163, 183, 0.3);
 }
 
-/* ==========================================================================
-   5. FORMAT E REGJISTRIMIT EDHE KYÇJES (FENTY FORM CARD)
-   ========================================================================== */
+
 .fenty-form-card {
     background: var(--white);
     border-radius: 20px;
@@ -303,9 +247,7 @@ h1, h2, h3, h4, h5, .navbar-brand {
     background-color: #fffcfc;
 }
 
-/* ==========================================================================
-   6. FOOTER (I PASTER DHE MODERN)
-   ========================================================================== */
+
 footer {
     background-color: var(--white) !important;
     color: var(--dark-text) !important;
@@ -329,9 +271,6 @@ footer a:hover {
     color: var(--deep-pink) !important;
 }
 
-/* ==========================================================================
-   7. KEYFRAMES PËR ANIMACIONET SMOOTH
-   ========================================================================== */
 @keyframes fadeInEffect {
     from { opacity: 0; }
     to { opacity: 1; }
