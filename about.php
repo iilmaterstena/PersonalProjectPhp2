@@ -3,11 +3,7 @@
 <div class="container my-5 py-5">
     <div class="row align-items-center">
         <div class="col-md-6 mb-4 mb-md-0">
-<<<<<<< HEAD
             <img src="images/rihana.avif" class="img-fluid shadow" alt="About Fenty">
-=======
-            <img src="images/rihana3.avif" class="img-fluid shadow" alt="About Fenty">
->>>>>>> 88b0b7dd611ecaef5fd9f22a06f9d2e0086a02a0
         </div>
         <div class="col-md-6 px-md-5">
             <span class="text-muted text-uppercase fw-bold">The Story</span>
