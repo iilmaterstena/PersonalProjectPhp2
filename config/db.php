@@ -1,6 +1,6 @@
 <?php
-// config/db.php
-include "config.php"; // Pasi janë në të njëjtit folder
+
+include "config.php"; 
 
 try {
     $connection = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
