@@ -3,7 +3,7 @@
 <div class="container my-5 py-5">
     <div class="row align-items-center">
         <div class="col-md-6 mb-4 mb-md-0">
-            <img src="https://placehold.co/600x500?text=Rihanna+Fenty" class="img-fluid shadow" alt="About Fenty">
+            <img src="images/rihana.avif" class="img-fluid shadow" alt="About Fenty">
         </div>
         <div class="col-md-6 px-md-5">
             <span class="text-muted text-uppercase fw-bold">The Story</span>
